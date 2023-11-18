@@ -1,4 +1,4 @@
-# CustomGuns
+# CustomGuns V1.0.1
 A fully customizable datapack for Minecraft 1.20.2+ that features custom guns that fully integrate with the surrounding world.
 You can create your own guns with custom stats and also use this with friends without having to install mods.
 
@@ -20,6 +20,7 @@ your worlds that you want the datapack to be in and open the datapacks folder an
   it will not have those anymore.
 - You cannot use your weapon in your offhand.
 - Items that have a right click functionality can not be converted.
+- **I have not tested it for multiplayer so that might not work at all!**
 - **It pretty much doesn't if there is an end portal in the world since it uses ender eyes for the right click detection.**
 
 ## Create your own gun
