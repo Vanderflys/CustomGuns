@@ -1,0 +1,54 @@
+[
+	{
+		"function": "set_nbt",
+		"tag": "{CustomWeapon:1b,HideFlags:127}"
+	},
+
+	{
+		"function": "copy_nbt",
+		"source": {
+			"type": "storage",
+			"source": "guns:variables"
+		},
+		"ops": [
+			{
+				"source": "pickup",
+				"target": "Data",
+				"op": "replace"
+			}
+		]
+	},
+
+	{
+		"function": "set_name",
+		"entity": "this",
+		"name": [
+			{
+				"storage": "guns:variables",
+				"nbt": "pickup.Name",
+				"color": "gold",
+				"extra": [
+					{
+						"text": "      "
+					}
+				],
+				"italic": false
+			},
+			{
+				"storage": "guns:variables",
+				"nbt": "pickup.Bullets",
+				"color": "gray"
+			},
+			{
+				"text": "/",
+				"color": "dark_gray",
+				"italic": false
+			},
+			{
+				"storage": "guns:variables",
+				"nbt": "pickup.Magazine",
+				"color": "gray"
+			}
+		]
+	}
+]

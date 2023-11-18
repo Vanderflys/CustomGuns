@@ -1,0 +1,54 @@
+[
+	{
+		"function": "copy_nbt",
+		"source": {
+			"type": "storage",
+			"source": "guns:variables"
+		},
+		"ops": [
+			{
+				"source": "stats",
+				"target": "Data",
+				"op": "replace"
+			}
+		]
+	},
+	{
+		"function": "set_name",
+		"entity": "this",
+		"name": [
+			{
+				"storage": "guns:variables",
+				"nbt": "stats.Name",
+				"color": "gold",
+				"extra": [
+					{
+						"text": "      "
+					}
+				],
+				"italic": false
+			},
+			{
+				"score": {
+					"name": ".Bullets",
+					"objective": "Gun.Stats"
+				},
+				"color": "gray",
+				"italic": false
+			},
+			{
+				"text": "/",
+				"color": "dark_gray",
+				"italic": false
+			},
+			{
+				"score": {
+					"name": ".Magazine",
+					"objective": "Gun.Stats"
+				},
+				"color": "gray",
+				"italic": false
+			}
+		]
+	}
+]
