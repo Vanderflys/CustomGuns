@@ -25,25 +25,21 @@ your worlds that you want the datapack to be in and open the datapacks folder an
 To make your own guns simply use this command in a command block since it is too long for the chat box.
 ```
 /data modify storage guns:variables pickup set value {
-    Data:{
-        Damage:20,
-        Headshot:20,
-        Bullets:3,
-        Magazine:3,
-        X:-0.32,
-        Y:-0.18,
-        Z:0.2,
-        Bloom:0,
-        ID:2,
-        Cooldown:30,
-        Recoil:2.5d,
-        Range:300,
-        Semi-Auto:true,
-        ReloadTime:40,
-        Name:"AWP",
-    },
-    CustomModelData:0,
-    CustomWeapon:1b
+    Damage:20,
+    Headshot:20,
+    Bullets:3,
+    Magazine:3,
+    X:-0.32,
+    Y:-0.18,
+    Z:0.2,
+    Bloom:0,
+    ID:2,
+    Cooldown:30,
+    Recoil:2.5d,
+    Range:300,
+    Semi-Auto:true,
+    ReloadTime:40,
+    Name:"AWP",
 }
 ```
 
