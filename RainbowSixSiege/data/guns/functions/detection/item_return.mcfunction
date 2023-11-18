@@ -1,0 +1,1 @@
+$summon item ~ ~ ~ {Item:{id:"$(id)",Count:$(Count)},PickupDelay:0s}
