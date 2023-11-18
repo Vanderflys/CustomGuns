@@ -19,7 +19,8 @@ your worlds that you want the datapack to be in and open the datapacks folder an
 - When switching to weapons your offhand will be emptied and returned to the player but if this item contains custom nbt tags
   it will not have those anymore.
 - You cannot use your weapon in your offhand.
-- Does not support all 
+- Items that have a right click functionality can not be converted.
+- **It pretty much doesn't if there is an end portal in the world since it uses ender eyes for the right click detection.**
 
 ## Create your own gun
 To make your own guns simply use this command in a command block since it is too long for the chat box.
