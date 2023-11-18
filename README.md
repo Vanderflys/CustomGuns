@@ -43,6 +43,10 @@ To make your own guns simply use this command in a command block since it is too
 }
 ```
 
+After modifying the storage for your weapon run
+```/item modify entity @s weapon.mainhand main:change_stats```
+**Hold the item that you want to convert into a weapon in your mainhand!**
+
 - Damage: as in damage dealt in hearts
 - Headshot: as in damage dealt in hearts for headshots
 - Bullets: Current amount of bullets in gun
