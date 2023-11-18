@@ -39,7 +39,7 @@ To make your own guns simply use this command in a command block since it is too
         Recoil:2.5d,
         Range:300,
         Semi-Auto:true,
-        ReloadTime:40
+        ReloadTime:40,
         Name:"AWP",
     },
     CustomModelData:0,
