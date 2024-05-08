@@ -1,68 +1,68 @@
-# CustomGuns V1.0.1
-A fully customizable datapack for Minecraft 1.20.2+ that features custom guns that fully integrate with the surrounding world.
+![Header](https://cdn.modrinth.com/data/cached_images/c125fa1f38631128b293112a7a511c61bd438ee2.png)
+<center>
+<img alt="Modrinth Followers" src="https://img.shields.io/modrinth/followers/ACSZqOO2?style=flat-square&amp;logo=modrinth&amp;logoColor=%2300AF5C&amp;label=Followers">
+<a href="https://discord.gg/D75yRDfWKD" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/878270685867311164?logo=discord&amp;logoColor=%235865F2&amp;label=Discord&amp;cacheSeconds=3600&amp;link=https%3A%2F%2Fdiscord.gg%2FD75yRDfWKD">
+</a>
+<a href="https://vanderflys.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fexplorerseden.eu&amp;up_message=Click%20Me&amp;down_message=We%27ll%20be%20right%20back!&amp;label=Website&amp;cacheSeconds=3600">
+</a>
+<img alt="Static Badge" src="https://img.shields.io/badge/Server-vanderflys.chickeniq.net-brightgreen">
+</center><br>
+
+## 📖 Description
+A fully customizable datapack for Minecraft 1.20.5+ that features custom guns that fully integrate with the surrounding world.
 You can create your own guns with custom stats and also use this with friends without having to install mods.
+## ⭐ Features
+• Functional and accurate guns with realistic names, movement, and recoil.<br>
+• Works with and without resource packs.<br>
+• 100% Multiplayer supported.<br>
+• It is easy to change settings via the chat menu.<br>
+• Create your own guns or use the ones that are already in the datapack.
 
-## Installation
-Download the zip file and unzip it. When unzipped copy it and press `windows + r` and type `%appdata%\.minecraft\saves`. Click on one of
-your worlds that you want the datapack to be in and open the datapacks folder and paste it in there.
+## ⚙️ Installation
+After installing it you may need to restart your world with `/reload`.<br>
+To open the chat menu, use `/reload` again.
 
-## Pros
-- You can change the gun behaviour in the settings with `/trigger Settings.Change`.
-- You can shoot through gaps in some of the blocks like stairs, slabs, enchanting tables and doors.
-- Has headshot detection but is not 100% accurate.
-- You can use this with and without a resource pack.
-- And if you do use a recource pack you can easily make your own models for them.
-- Should work with other datapack but haven't tested it.
-- Everything is stored in the "cloud" storage so it will instantly work after being installed.
+## ⚡️IMPORTANT REMINDER
+You need permissions to use commands to install and configure the settings!<br>
+This means that commands must be turned on in single-player and OP in multiplayer.
 
-## Cons (plan to fix/remove most of them in the future) 
-- When switching to weapons your offhand will be emptied and returned to the player but if this item contains custom nbt tags
-  it will not have those anymore.
-- You cannot use your weapon in your offhand.
-- Items that have a right click functionality can not be converted.
-- **I have not tested it for multiplayer so that might not work at all!**
-- **It pretty much doesn't if there is an end portal in the world since it uses ender eyes for the right click detection.**
+## 🛠️ Creation
+### For V2.1.0+
+Hold the item that you want to convert into a gun in your mainhand and run this command:
+```
+/function guns:create {name:"AR-15",color:"blue",bullets:30,bullet_type:"medium",damage:9,headshot:20,cooldown:2,bloom:false,semi_auto:false,range:70,reload_time:40}
+```
+Replace the stats with your wanted stats.
 
-## Create your own gun
+Unsupported items for custom gun creation are: All types of firework, rods, armor pieces, buckets, bows, potions, (throwables), empty maps, spawn eggs, eggs, snowballs, tridents, axes (still strip logs when right clicked on them), ender pearls, debug stick and ender eyes.
+<br><br>
+### For V2
+Hold the item that you want to convert into a gun in your mainhand and run this command:
+```
+/function guns:create {name:"AR-15",color:"blue",bullets:30,magazine:90,damage:9,headshot:20,cooldown:2,bloom:false,semi_auto:false,range:70,reload_time:40}
+```
+Replace the stats with your wanted stats.
+<br><br>
+### For V1
 To make your own guns simply use this command in a command block since it is too long for the chat box.
 ```
-/data modify storage guns:variables pickup set value {
+/data modify storage guns create set value {
     Damage:20,
     Headshot:20,
     Bullets:3,
     Magazine:3,
-    X:-0.32,
-    Y:-0.18,
-    Z:0.2,
     Bloom:0,
-    ID:2,
     Cooldown:30,
-    Recoil:2.5d,
+    Recoil:2.5,
     Range:300,
     Semi-Auto:true,
     ReloadTime:40,
     Name:"AWP",
 }
 ```
+<br>
 
-After modifying the storage for your weapon run
-```/item modify entity @s weapon.mainhand main:change_stats```
-**Hold the item that you want to convert into a weapon in your mainhand!**
-
-- Damage: as in damage dealt in hearts
-- Headshot: as in damage dealt in hearts for headshots
-- Bullets: Current amount of bullets in gun
-- Magazine: Rest of the stored bullets
-  
-- X: Relative X coordinate for custom bullet tracers
-- Y: Relative Y coordinate for custom bullet tracers
-- Z: Relative Z coordinate for custom bullet tracers
-
-- ID: Gun ID for identifying the gun
-- Bloom: Leave at 0 if the gun shoots 1 bullet, if you are shooting more than 1 bullet change it to that number
-- Cooldown: Fire rate cooldown in game ticks. the higher the cooldown, the lower the fire rate
-- Semi-Auto: If the mouse can be held down or needs to be clicked manually for every shot.
-- Recoil: How much recoil each shot has.
-- Range: How far the gun can shoot. 1 block is 4 range.
-- ReloadTime: Time for each reload in gameticks (20 ticks is 1 second).
-- Name: As a string "AWP" name for the gun.
+After modifying the storage for your weapon run<br>
+```
+/item modify entity @s weapon.mainhand main:change_stats
+```
