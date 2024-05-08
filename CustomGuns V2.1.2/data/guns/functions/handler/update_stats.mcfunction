@@ -1,0 +1,1 @@
+$item modify entity @s weapon [{"function":"minecraft:set_custom_data","tag":"{\"bullets\":$(Bullets)}"}]

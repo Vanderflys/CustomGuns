@@ -1,0 +1,4 @@
+execute if data entity @s SelectedItem.components."minecraft:custom_data"{bullet_type:"pellets"} store result score .Magazine Temp run return run clear @s gunpowder[custom_data={bullet_type:"pellets"}] 0
+execute if data entity @s SelectedItem.components."minecraft:custom_data"{bullet_type:"light"} store result score .Magazine Temp run return run clear @s stone_button[custom_data={bullet_type:"light"}] 0
+execute if data entity @s SelectedItem.components."minecraft:custom_data"{bullet_type:"medium"} store result score .Magazine Temp run return run clear @s iron_nugget[custom_data={bullet_type:"medium"}] 0
+execute if data entity @s SelectedItem.components."minecraft:custom_data"{bullet_type:"heavy"} store result score .Magazine Temp run return run clear @s amethyst_shard[custom_data={bullet_type:"heavy"}] 0
