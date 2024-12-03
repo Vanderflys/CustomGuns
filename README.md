@@ -1,12 +1,7 @@
 ![Header](https://cdn.modrinth.com/data/cached_images/c125fa1f38631128b293112a7a511c61bd438ee2.png)
-<center>
-<img alt="Modrinth Followers" src="https://img.shields.io/modrinth/followers/ACSZqOO2?style=flat-square&amp;logo=modrinth&amp;logoColor=%2300AF5C&amp;label=Followers">
-<a href="https://discord.gg/D75yRDfWKD" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/878270685867311164?logo=discord&amp;logoColor=%235865F2&amp;label=Discord&amp;cacheSeconds=3600&amp;link=https%3A%2F%2Fdiscord.gg%2FD75yRDfWKD">
-</a>
-<a href="https://vanderflys.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fexplorerseden.eu&amp;up_message=Click%20Me&amp;down_message=We%27ll%20be%20right%20back!&amp;label=Website&amp;cacheSeconds=3600">
-</a>
-<img alt="Static Badge" src="https://img.shields.io/badge/Server-vanderflys.chickeniq.net-brightgreen">
-</center><br>
+
+
+# Download on [Modrinth](https://modrinth.com/datapack/customguns)!
 
 ## 📖 Description
 A fully customizable datapack for Minecraft 1.20.5+ that features custom guns that fully integrate with the surrounding world.
