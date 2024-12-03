@@ -1,4 +1,0 @@
-$execute if data entity @s SelectedItem.components."minecraft:custom_data"{bullet_type:"pellets"} run return run clear @s gunpowder[custom_data={bullet_type:"pellets"}] $(RemoveBullets)
-$execute if data entity @s SelectedItem.components."minecraft:custom_data"{bullet_type:"light"} run return run clear @s stone_button[custom_data={bullet_type:"light"}] $(RemoveBullets)
-$execute if data entity @s SelectedItem.components."minecraft:custom_data"{bullet_type:"medium"} run return run clear @s iron_nugget[custom_data={bullet_type:"medium"}] $(RemoveBullets)
-$execute if data entity @s SelectedItem.components."minecraft:custom_data"{bullet_type:"heavy"} run clear @s amethyst_shard[custom_data={bullet_type:"heavy"}] $(RemoveBullets)
